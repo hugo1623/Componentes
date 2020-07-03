@@ -1,0 +1,29 @@
+<hr>
+<h3 style="color: blueviolet;">{{titulo}}</h3>
+
+<strong>Empleado Estrella</strong>
+
+
+
+<div *ngIf="trabajadorExterno == true"> <br>
+    <button style="color: brown" (click)="cambiarExterno(false)">Mostra Trabajador</button>
+    <ul>
+        <li>{{trabajadores[0].nombre}}</li>
+        <li>{{trabajadores[1].edad}}</li>
+        <li>{{trabajadores[2].cargo}}</li>
+        <li *ngIf="trabajadorExterno == true">Esta Contratado</li>
+        <li *ngIf="trabajadorExterno != true"> NO Esta Contratado</li>
+
+    </ul>
+</div>
+
+<div *ngIf="trabajadorExterno == false"><br>
+    <button style="color: darkmagenta" (click)="cambiarExterno(true)">Mostra Empleado</button>
+    <ul>
+        <li>{{empleado.nombre}}</li>
+        <li>{{empleado.edad}}</li>
+        <li>{{empleado.cargo}}</li>
+        <li>{{empleado.contrato}}</li>
+
+    </ul>
+</div>
