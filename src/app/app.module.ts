@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import{ routing, appRoutinProviders} from './app.routing'
 
 
 import { AppComponent } from './app.component';
@@ -12,13 +13,14 @@ import { from } from 'rxjs';
   declarations: [
     AppComponent,
     FrutaComponent,
-    EmpleadoComponent
+    EmpleadoComponent,
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutinProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
