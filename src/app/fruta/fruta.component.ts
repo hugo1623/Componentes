@@ -25,6 +25,7 @@ export class FrutaComponent {
   cambiarNombre() {
     this.nombre = 'Kyra';
   }
+  
   cambiarEdad() {
     this.edad = 20;
   }

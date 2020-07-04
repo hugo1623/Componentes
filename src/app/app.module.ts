@@ -17,7 +17,7 @@ import {ContactoComponent}from './contacto/contacto.component';
     FrutaComponent,
     EmpleadoComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
