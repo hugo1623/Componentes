@@ -11,9 +11,12 @@ export class HomeComponent  {
   public titulo = "Página principal";
   public listadoRopa:Array<string>;
   public prendaGuardada:string;
+  public fecha;
   constructor(
     private _ropaService:RopaService,
-  ){}
+  ){
+    this.fecha = new Date(2020,7,4);
+  }
   ngOnInit(){
     this.listadoRopa= this._ropaService.getRopa();
     console.log(this.listadoRopa);
