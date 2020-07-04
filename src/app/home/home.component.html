@@ -1,5 +1,5 @@
 <h2>{{titulo}}</h2>
-<br/> {{fecha|date:'fullDate'}}
+<br/> {{fecha|date:'fullDate'| uppercase| lowercase}}
 
 <br/>
 <input type="text" [(ngModel)]="prendaGuardada"> <button (click)="guardarPrenda()">Añadir Prenda</button>

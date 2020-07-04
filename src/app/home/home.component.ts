@@ -15,7 +15,7 @@ export class HomeComponent  {
   constructor(
     private _ropaService:RopaService,
   ){
-    this.fecha = new Date(2020,7,4);
+    this.fecha = new Date(2020,6,4);
   }
   ngOnInit(){
     this.listadoRopa= this._ropaService.getRopa();
