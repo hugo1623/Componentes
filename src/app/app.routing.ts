@@ -10,9 +10,10 @@ import {ContactoComponent}from './contacto/contacto.component';
 const appRoutes: Routes =[
     {path:'', component: HomeComponent},
     {path:'empleado',component: EmpleadoComponent},
+    {path:'fruta',component:FrutaComponent},
     {path:'home',component: HomeComponent},
     {path:'contacto',component: ContactoComponent},
-    {path:'fruta',component:FrutaComponent},
+    {path:'contacto/:page',component: ContactoComponent},
     {path:'**', component: HomeComponent}, 
 ];
 export const appRoutinProviders: any[]=[];
