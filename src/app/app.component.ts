@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
+import { Coche } from './coches/coches';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Componente Base Principal';
+  public coche: Coche;
+
+  constructor(){
+    this.coche = new Coche('', '', '');
+  }
+
 }

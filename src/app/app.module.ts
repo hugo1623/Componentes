@@ -7,10 +7,11 @@ import{ routing, appRoutinProviders} from './app.routing'
 import { AppComponent } from './app.component';
 import { FrutaComponent} from './fruta/fruta.component';
 import { EmpleadoComponent } from './empleado/empleado.component';
-import { from } from 'rxjs';
+
 import {HomeComponent} from './home/home.component';
 import {ContactoComponent}from './contacto/contacto.component';
 import { ConversorPipe } from './pipes/conversor.pipe';
+import { CochesComponent } from './coches/coches.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ConversorPipe } from './pipes/conversor.pipe';
     HomeComponent,
     ContactoComponent,
     ConversorPipe,
+    CochesComponent,
   ],
   imports: [
     BrowserModule,
