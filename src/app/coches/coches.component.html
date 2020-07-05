@@ -1,13 +1,13 @@
 <p>Componente de Coches</p>
-<form #formCoche="ngForm">
+<form #formCoche="ngForm" (ngSubmit)="onSubmit()">
     <p>
         <label>Nombre: </label>
-        <input type="text">
+        <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="coche.nombre" required>
     </p>
 
     <p>
         <label>Caballaje: </label>
-        <input type="text">
+        <input type="text" name="caballaje" #caballaje="ngModel" [(ngModel)]="coche.caballaje" required>
     </p>
     <p>
         <label>Color: </label>

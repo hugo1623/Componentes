@@ -21,7 +21,7 @@ import { CochesComponent } from './coches/coches.component';
     HomeComponent,
     ContactoComponent,
     ConversorPipe,
-    CochesComponent,
+    CochesComponent
   ],
   imports: [
     BrowserModule,
